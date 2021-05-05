@@ -1,1 +1,1 @@
-# NVIDIA_IMU_PLUGIN
+# NVIDIA_IMU_Plugin
