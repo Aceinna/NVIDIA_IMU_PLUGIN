@@ -1,32 +1,15 @@
-/////////////////////////////////////////////////////////////////////////////////////////
-// This code contains NVIDIA Confidential Information and is disclosed
-// under the Mutual Non-Disclosure Agreement.
-//
-// Notice
-// ALL NVIDIA DESIGN SPECIFICATIONS AND CODE ("MATERIALS") ARE PROVIDED "AS IS" NVIDIA MAKES
-// NO REPRESENTATIONS, WARRANTIES, EXPRESSED, IMPLIED, STATUTORY, OR OTHERWISE WITH RESPECT TO
-// THE MATERIALS, AND EXPRESSLY DISCLAIMS ANY IMPLIED WARRANTIES OF NONINFRINGEMENT,
-// MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE.
-//
-// NVIDIA Corporation assumes no responsibility for the consequences of use of such
-// information or for any infringement of patents or other rights of third parties that may
-// result from its use. No license is granted by implication or otherwise under any patent
-// or patent rights of NVIDIA Corporation. No third party distribution is allowed unless
-// expressly authorized by NVIDIA.  Details are subject to change without notice.
-// This code supersedes and replaces all information previously supplied.
-// NVIDIA Corporation products are not authorized for use as critical
-// components in life support devices or systems without express written approval of
-// NVIDIA Corporation.
-//
-// Copyright (c) 2019 NVIDIA Corporation. All rights reserved.
-//
-// NVIDIA Corporation and its licensors retain all intellectual property and proprietary
-// rights in and to this software and related documentation and any modifications thereto.
-// Any use, reproduction, disclosure or distribution of this software and related
-// documentation without an express license agreement from NVIDIA Corporation is
-// strictly prohibited.
-//
-/////////////////////////////////////////////////////////////////////////////////////////
+/*******************************************************************************
+Copyright 2021 ACEINNA, INC
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*******************************************************************************/
 
 #include <dw/sensors/plugins/imu/IMUPlugin.h>
 #include <dw/sensors/canbus/CAN.h>

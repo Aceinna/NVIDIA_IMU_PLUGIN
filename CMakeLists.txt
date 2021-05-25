@@ -1,4 +1,4 @@
-#Copyright (c) 2019, NVIDIA CORPORATION.  All rights reserved.
+#Copyright (c) 2021, ACEINNA.  All rights reserved.
 
 #Set minimum cmake version
 cmake_minimum_required(VERSION 3.5)
@@ -34,6 +34,7 @@ include_directories(include)
 include_directories(
     ${CUDA_INCLUDE_DIR}
     ${Driveworks_INCLUDE_DIR}
+    ${DW_PATH}/samples/src/sensors/plugins/common
 )
 include_directories(${SAMPLE_PLUGINS_COMMON_DIR})
 message("${SAMPLE_PLUGINS_COMMON_DIR}")
@@ -50,8 +51,6 @@ set(SOURCES
     src/openimu300_plugin.cpp
     include/imu.h
     include/openimu300_plugin.h
-    include/ByteQueue.hpp
-    include/BufferPool.hpp
     )
 
 set(LIBRARIES
