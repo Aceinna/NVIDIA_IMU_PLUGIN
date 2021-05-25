@@ -198,15 +198,16 @@ public:
     dwStatus readRawData(const uint8_t** data, size_t* size, dwTime_t timeout_us)
     {
         dwCANMessage* result = nullptr;
-        bool ok              = m_slot.get(result);
+        bool ok              = m_slot.get(result);    // Get an empty message slot from plugin's empty message pool
         if (!ok)
         {
             std::cerr << "readRawData: Read raw data, slot not empty\n";
             return DW_BUFFER_FULL;
         }
 
+        // Read sensor raw data to provided message slot
         while (dwSensorCAN_readMessage(result, timeout_us, (m_canSensor)) == DW_SUCCESS)
-        {printf("Reading from CAN\r\n");
+        {
           if(imu->isValidMessage(result->id))
           {
             break;
@@ -226,8 +227,7 @@ public:
         }
 
         bool ok = m_slot.put(const_cast<dwCANMessage*>(reinterpret_cast<const dwCANMessage*>(data)));
-		printf("Returning Raaw\r\n");
-		if (!ok)
+		    if (!ok)
         {
             std::cerr << "returnRawData: IMUPlugin return raw data, invalid data pointer" << std::endl;
             return DW_INVALID_ARGUMENT;

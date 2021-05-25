@@ -6,7 +6,7 @@ cmake_minimum_required(VERSION 3.5)
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
 #Set project name
-project(openimu_plugin C CXX)
+project(aceinna_openimu_plugin C CXX)
 
 #Set compiler settings
 set(CMAKE_CXX_FLAGS "-std=c++11")
@@ -26,7 +26,7 @@ else()
     set(Driveworks_INCLUDE_DIR "${DW_PATH}/targets/x86_64-Linux/include")
 endif()
 
-set(SAMPLE_PLUGINS_COMMON_DIR "/usr/local/driveworks/include")
+set(SAMPLE_PLUGINS_COMMON_DIR "${DW_PATH}/include")
 
 #Include dependencies
 
